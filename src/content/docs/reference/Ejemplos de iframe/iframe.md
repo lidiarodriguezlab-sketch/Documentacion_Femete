@@ -38,7 +38,7 @@ description: A guide in my new Starlight docs site.
 </div>
 
 
-## Línea de codigo
+### Línea de codigo
 
 ```javascript
 console.log("¡Hola, mundo!");
