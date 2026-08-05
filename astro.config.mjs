@@ -3,8 +3,7 @@ import { defineConfig } from 'astro/config';
 import starlight from '@astrojs/starlight';
 
 export default defineConfig({
-    site: 'https://lidiarodriguezlab-sketch.github.io/Documentacion_Femete',
-    base: '/Documentacion_Femete/',
+    site: 'https://lidiarodriguezlab-sketch.github.io/Documentacion_Femete/',
     integrations: [
         starlight({
             title: 'Proyecto Domitila',
@@ -16,9 +15,10 @@ export default defineConfig({
                 },
             },
             
-            social: [{ icon: 'github', label: 'GitHub', href: 'https://github.com/lidiarodriguezlab-sketch/Documentacion_Femete' }],
+            social: [{ icon: 'github', label: 'GitHub', href: 'https://github.com/withastro/starlight' }],
             customCss: ['./src/Style/custom.css'],
             
+            // Reemplaza el espacio de búsqueda por tu contenedor doble
             components: {
                 Search: './src/components/CustomAISearch.astro',
             },
