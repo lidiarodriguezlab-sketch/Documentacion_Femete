@@ -36,3 +36,10 @@ description: A guide in my new Starlight docs site.
     </a>
   </p>
 </div>
+
+
+## Línea de codigo
+
+```javascript
+console.log("¡Hola, mundo!");
+```
