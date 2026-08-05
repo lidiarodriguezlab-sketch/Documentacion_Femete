@@ -15,7 +15,7 @@ export default defineConfig({
                 },
             },
             
-            social: [{ icon: 'github', label: 'GitHub', href: 'https://github.com/withastro/starlight' }],
+            social: [{ icon: 'github', label: 'GitHub', href: 'https://github.com/lidiarodriguezlab-sketch/Documentacion_Femete.git' }],
             customCss: ['./src/Style/custom.css'],
             
             // Reemplaza el espacio de búsqueda por tu contenedor doble
