@@ -3,7 +3,7 @@ import { defineConfig } from 'astro/config';
 import starlight from '@astrojs/starlight';
 
 export default defineConfig({
-    site: 'https://lidiarodriguezlab-sketch.github.io',
+    site: 'https://lidiarodriguezlab-sketch.github.io/Documentacion_Femete',
     base: '/Documentacion_Femete/',
     integrations: [
         starlight({
@@ -16,7 +16,6 @@ export default defineConfig({
                 },
             },
             
-            // Apunta al repositorio de GitHub real
             social: [{ icon: 'github', label: 'GitHub', href: 'https://github.com/lidiarodriguezlab-sketch/Documentacion_Femete' }],
             customCss: ['./src/Style/custom.css'],
             
