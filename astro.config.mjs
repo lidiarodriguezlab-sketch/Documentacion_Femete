@@ -18,9 +18,6 @@ export default defineConfig({
 
             social: [{ icon: 'github', label: 'GitHub', href: 'https://github.com/withastro/starlight' }],
             customCss: ['./src/Style/custom.css'],
-            components: {
-                Search: './src/components/customAISearch.astro',
-            },
 
             sidebar: [
                 {
