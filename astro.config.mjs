@@ -16,10 +16,21 @@ export default defineConfig({
                     lang: 'es',
                 },
             },
+            
+            // Inyección de la etiqueta de verificación de Algolia en el <head>
+            head: [
+                {
+                    tag: 'meta',
+                    attrs: {
+                        name: 'algolia-site-verification',
+                        content: '9736000863C405C5',
+                    },
+                },
+            ],
+
             social: [{ icon: 'github', label: 'GitHub', href: 'https://github.com/withastro/starlight' }],
             customCss: ['./src/Style/custom.css'],
             
-            // Configuración con las claves extraídas de tu panel de Algolia
             plugins: [
                 starlightDocSearch({
                     appId: 'UNU9S528BP',
