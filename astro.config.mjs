@@ -2,7 +2,6 @@
 import { defineConfig } from 'astro/config';
 import starlight from '@astrojs/starlight';
 
-// https://astro.build/config
 export default defineConfig({
     site: 'https://lidiarodriguezlab-sketch.github.io/Documentacion_Femete/',
     integrations: [
@@ -15,11 +14,13 @@ export default defineConfig({
                     lang: 'es',
                 },
             },
-
+            
             social: [{ icon: 'github', label: 'GitHub', href: 'https://github.com/withastro/starlight' }],
             customCss: ['./src/Style/custom.css'],
+            
+            // Reemplaza el espacio de búsqueda por tu contenedor doble
             components: {
-                Search: './src/components/customAISearch.astro',
+                Search: './src/components/CustomAISearch.astro',
             },
 
             sidebar: [

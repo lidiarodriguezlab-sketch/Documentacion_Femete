@@ -1,23 +1,37 @@
 ---
-// src/components/CustomAISearch.astro
+// Importa el buscador nativo por defecto de Starlight
+import DefaultSearch from '@astrojs/starlight/components/Search.astro';
 ---
 
-<div class="biel-header-search">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/biel-search/dist/biel-search/biel-search.css" />
-  <script is:inline type="module" src="https://cdn.jsdelivr.net/npm/biel-search/dist/biel-search/biel-search.esm.js"></script>
+<div class="search-header-container">
+  <!-- 1. Buscador nativo de Starlight -->
+  <DefaultSearch {...Astro.props} />
 
-  <biel-button
-    project="1xt7k6evs9"
-    header-title="Asistente IA"
-    button-position="relative"
-    modal-position="sidebar-right"
-    button-style="dark">
-    🔍 Buscar con IA
-  </biel-button>
+  <!-- 2. Botón de IA de Biel.ai -->
+  <div class="biel-wrapper">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/biel-search/dist/biel-search/biel-search.css" />
+    <script is:inline type="module" src="https://cdn.jsdelivr.net/npm/biel-search/dist/biel-search/biel-search.esm.js"></script>
+
+    <biel-button
+      project="1xt7k6evs9"
+      header-title="Asistente IA"
+      button-position="relative"
+      modal-position="sidebar-right"
+      button-style="dark"
+      button-icon="🤖">
+      Chatbot
+    </biel-button>
+  </div>
 </div>
 
 <style>
-  .biel-header-search {
+  .search-header-container {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem; /* Separación ampliada entre el buscador y el botón */
+  }
+
+  .biel-wrapper {
     display: flex;
     align-items: center;
   }
