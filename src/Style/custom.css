@@ -1,0 +1,51 @@
+/* Ajustes generales del layout (se aplican a todas las páginas) */
+.main-pane {
+  max-width: 100% !important;
+  margin: 0 !important;
+  padding-left: 1rem !important;
+}
+
+.content-panel {
+  max-width: 100% !important;
+}
+
+.sl-container {
+  max-width: 100% !important;
+  margin: 0 !important;
+}
+
+/* Justifica el texto dentro del contenido Markdown */
+.sl-markdown-content p {
+  text-align: justify !important;
+}
+
+/* Corrige el Hero para que el texto y la imagen vuelvan a estar juntos y centrados verticalmente */
+.hero {
+  display: flex !important;
+  flex-direction: column !important; /* Fuerza a que vayan uno arriba del otro */
+  align-items: center !important;     /* Centra texto e imagen horizontalmente */
+  justify-content: center !important;
+  text-align: center !important;
+  gap: 1rem !important;              /* Espacio vertical controlado entre texto e imagen */
+  margin: 2rem auto !important;
+  max-width: 600px !important;       /* Limita el ancho del contenedor del hero */
+  width: 100% !important;
+}
+
+.hero .copy {
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  text-align: center !important;
+}
+
+.hero .copy * {
+  text-align: center !important;
+}
+
+.hero .hero-image {
+  order: 2 !important;                /* Asegura que la imagen vaya debajo del texto */
+  display: flex !important;
+  justify-content: center !important;
+  margin: 0 auto !important;
+}
