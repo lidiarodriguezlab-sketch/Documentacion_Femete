@@ -16,7 +16,7 @@ export default defineConfig({
 
         starlight({
 
-            title: 'My Docs',
+            title: 'Proyecto Domitila',
 
             defaultLocale: 'root',
 
