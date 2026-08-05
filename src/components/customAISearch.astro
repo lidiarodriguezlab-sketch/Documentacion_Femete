@@ -1,0 +1,24 @@
+---
+// src/components/CustomAISearch.astro
+---
+
+<div class="biel-header-search">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/biel-search/dist/biel-search/biel-search.css" />
+  <script is:inline type="module" src="https://cdn.jsdelivr.net/npm/biel-search/dist/biel-search/biel-search.esm.js"></script>
+
+  <biel-button
+    project="1xt7k6evs9"
+    header-title="Asistente IA"
+    button-position="relative"
+    modal-position="sidebar-right"
+    button-style="dark">
+    🔍 Buscar con IA
+  </biel-button>
+</div>
+
+<style>
+  .biel-header-search {
+    display: flex;
+    align-items: center;
+  }
+</style>
